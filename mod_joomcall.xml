@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.0"
+	client="site"
+	method="upgrade">
+	<name>JoomCall</name>
+	<author>Sergey Pronin</author>
+	<creationDate>26.12.2014</creationDate>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>sergey@seregin-pro.ru</authorEmail>
+	<authorUrl>http://www.seregin-pro.ru</authorUrl>
+	<version>1.2.0</version>
+	<description>JoomCall v 1.2.0 - модуль обратного звонка</description>
+    <files>
+        <filename module="mod_joomcall">mod_joomcall.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+		<folder>tmpl/</folder>
+    </files>
+	<languages>
+		<language tag="ru-RU">language/ru-RU/ru-RU.mod_joomcall.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_joomcall.ini</language>
+	</languages>
+<config>
+	<fields name="params">
+		<fieldset name="basic">
+				<field
+					name="mail_to"
+					type="text"
+					label="EMAIL_TO"
+					description="DESCRIPTION_EMAIL" />
+				<field
+					name="country_code"
+					type="text"
+					default="+7"
+					label="MOD_JOOMCALL_COUNTRY_CODE_LABEL"
+					description="MOD_JOOMCALL_COUNTRY_CODE_DESC" />
+				<field
+					name="time_list"
+					type="textarea"
+					default=""
+					label="MOD_JOOMCALL_TIME_LIST_LABEL"
+					description="MOD_JOOMCALL_TIME_LIST_DESC" />
+				<field
+					name="captcha"
+					type="list"
+					default="1"
+					label="MOD_JOOMCALL_CAPTCHA_LABEL"
+					description="MOD_JOOMCALL_CAPTCHA_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>				
+				<field
+					name="jquery"
+					default="1"
+					type="radio"
+					label="MOD_JOOMCALL_LABEL_JQUERY"
+					description="MOD_JOOMCALL_DESC_JQUERY">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>	
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="powered_by"
+					type="list"
+					default="0"
+					label="MOD_JOOMCALL_COPYRIGHT"
+					description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

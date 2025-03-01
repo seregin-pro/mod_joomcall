@@ -1,0 +1,143 @@
+#time-joomcall{
+	width: 100%;
+}
+/* Button start*/
+span.email-joomcall{
+	cursor:pointer;
+	text-align: center;
+	font-weight: bold;
+	color: #FFF;
+	padding:5px 5px;
+	display:block;
+	background-color: #08c;
+}
+/* Button end*/
+
+.ok-name-joomcall{
+	width: 16px;
+	height:16px;
+	background:url("../img/ok.png");
+	display:none;
+	float:left;
+	margin-left:0px;
+}
+.error-name-joomcall{
+	background:url("../img/error.png");
+	width: 16px;
+	height:16px;
+	float:left;
+	margin-left:0px;
+	display:none;
+}
+.label-name{
+	float:left;
+	width:110px;
+	font-size:12px !important;
+}
+.block-joomcall, .jc-text{
+	margin: 6px 6px 6px 6px;
+	color:black;
+	font-weight:normal;
+	text-align:left;
+}
+.red_star{
+	color:red;
+}
+#a-joomcall, #b-joomcall{
+	width: 34px;
+}
+#c-joomcall{
+	width:56px;
+}
+.image-sode-sp{
+	margin:0;
+	padding:0;
+	border:none;
+}
+.close-joomcall{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	margin-left: 287px;
+	margin-top: -15px;
+	cursor:pointer;
+}
+.input-joomcall, .input-joomcall-code{
+	margin: 4px 0 4px 130px;
+	text-align:left;
+}
+.input-joomcall input, .code-joomcall{
+	height: 22px !important;
+	margin:0 !important;
+	padding:0 !important;
+}
+.input-joomcall input{
+	width:154px !important;
+}
+#msg-joomcall{
+	height: 100px !important;
+	width:154px !important;
+	margin:0 !important;
+	padding:0 !important;
+}
+.button-joomcall{
+	margin: 10px 0 5px 6px;
+	text-align:left;
+}
+#top-joomcall{
+	cursor:pointer;
+	margin-bottom:20px;
+}
+#bottom-joomcall{
+	cursor:pointer;
+	margin-top:20px;
+}
+#form-action-joomcall{
+	display:none;
+	width: 300px;
+	position: fixed;
+	box-shadow: 0 0 5px 3px #282828;
+	top: 30%;
+	left:50%;
+    font-size: 12px; 
+    margin-left:-150px;
+	z-index: 65535;
+    background:#FFFFFF;
+}
+#form-action-joomcall a{
+	background:none;
+}
+#copyright-joomcall{
+	display:none;
+}
+.wrapper-joomcall{
+	top: 0px;
+    left:0px;
+	position: fixed; 
+	z-index: 65535;
+	width:100%;
+    height:100%;
+	background: url("../img/fon.png");
+	display:none;
+}
+@media (max-width: 350px) {
+#a-joomcall, #b-joomcall{
+	width: 22px;
+}
+#c-joomcall{
+	width:26px;
+}
+#form-action-joomcall{
+	width: 250px !important;
+	top: 5%;
+	left:50%; 
+    margin-left:-125px;
+}
+.input-joomcall input, #msg-joomcall{
+	width:100px !important;
+}
+.close-joomcall{
+	margin-left: 238px;
+	margin-top: -15px;
+}
+}
